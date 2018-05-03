@@ -1,0 +1,10 @@
+---
+layout: default
+title: Publications
+---
+<h1>{{ page.title }}</h1>
+<ul class="pub">
+  {% for pub in site.publications %}
+    <li><span>{{ pub.date | date_to_string }}</span> &raquo; <a href="{{ pub.url }}" title="{{ pub.title }}">{{ pub.title }}</a></li>
+  {% endfor %}
+</ul>

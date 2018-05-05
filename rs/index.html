@@ -1,0 +1,28 @@
+---
+layout: default
+title: R packages
+category: R
+---
+
+<h1>{{ page.title }}</h1>
+<div class="pub">
+  {% for post in site.posts %}
+    {% if post.categories contains page.category %}
+      {% assign currentdate = post.date | date: "%Y" %}
+      {% if currentdate != date %}
+        {% unless forloop.first %}</ul>{% endunless %}
+        <h2 class="year-list" id="y{{post.date | date: "%Y"}}">{{ currentdate }}</h2>
+        <ul>
+        {% assign date = currentdate %}
+      {% endif %}
+        <li>
+          <ul>
+            <li><span>{{ post.author }}</span></li>
+            <li><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+            <li><span>{{ post.year }} - {{ post.publisher }}</span> <a href="https://doi.org/{{ post.doi }}"><i class="ai ai-doi ai-1x"></i>{{ post.doi }}</a></li>
+          </ul>
+        </li>
+      {% if forloop.last %}</ul>{% endif %}
+    {% endif %}
+  {% endfor %}
+</div>

@@ -1,10 +1,22 @@
 ---
 layout: default
 title: Publications
+category: publication
 ---
 <h1>{{ page.title }}</h1>
-<ul class="pub">
-  {% for pub in site.publications %}
-    <li><span>{{ pub.date | date_to_string }}</span> &raquo; <a href="{{ pub.url }}" title="{{ pub.title }}">{{ pub.title }}</a></li>
+<div class="pub">
+  {% for post in site.categories[page.category] %}
+      {% assign currentdate = post.date | date: "%Y" %}
+      {% if currentdate != date %}
+  <h2 class="year-list" id="y{{post.date | date: "%Y"}}">{{ currentdate }}</h2>
+      {% assign date = currentdate %}
+      {% endif %}
+  <p class="pubentry">
+    <a href="{{ post.url }}" title="{{ post.title }}">
+      {{ post.author }} ({{ post.year }}): "<i>{{ post.title }}: {{ post.subtitle }}</i>".
+      <b>{{ post.journal }} {{ post.volume }} ({{ post.number }})</b>
+      <span><i class="ai ai-doi ai-1x"></i>{{ post.doi }}</span>
+    </a>
+  </p>
   {% endfor %}
-</ul>
+</div>

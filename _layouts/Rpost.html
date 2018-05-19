@@ -2,7 +2,13 @@
 layout: default
 ---
 <h1>{{ page.title }}</h1>
-<p class="meta">{{ page.date | date_to_string }}</p>
-<div class="rpost">
-  {{ content }}
+<h2>{{ page.subtitle }}</h2>
+<div class="rheader">{{ page.author }}</div>
+<div class="rheader">
+  <ul>
+    <li>{{ page.date | date_to_string }}</li>
+    <li><a href="https://doi.org/doi:{{ page.doi }}"><i class="ai ai-doi ai-2x text-center"></i></a></li>
+    <li>{{ page.version }}</li>
+  </ul>
 </div>
+{{ content }}

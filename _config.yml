@@ -1,3 +1,23 @@
-name: Felix G.M. Ernst
+# jekyll
+plugins:
+  - jemoji
+  - jekyll-mentions
+  - jekyll-redirect-from
+# theme
 markdown: kramdown
-theme: jekyll-theme-primer
+theme: jekyll-theme-minimal
+# data
+title: Felix G.M Ernst
+menu:
+  - Home:
+    link: /
+    text: Home
+  - Publications:
+    link: /publications/
+    text: Publications
+  - R:
+    link: /r/
+    text: R packages
+orcid:
+  show: true
+  id: 0000-0001-5064-0928

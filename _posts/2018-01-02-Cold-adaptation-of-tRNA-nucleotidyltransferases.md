@@ -3,7 +3,7 @@ category: [publication]
 layout: publication
 title: "Cold adaptation of tRNA nucleotidyltransferases"
 subtitle: "A tradeoff in activity, stability and fidelity"
-date: 2017-11-03
+date: 2018-01-02
 author: <b>Ernst, Felix GM</b>; Erber, Lieselotte; Sammler, Joana; Jühling, Frank; Betat, Heike; Mörl, Mario
 journal: RNA Biology
 year: 2018

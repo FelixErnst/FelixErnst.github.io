@@ -38,7 +38,7 @@ section {
 /* new class for elements */
 .text-center { transform: translateY(3px); }
 .rheader, .pubheader { margin-bottom:10px; }
-.rheader ul, .pubheader ul { list-style: none; height: 34px; padding: 0; background: #f4f4f4; -webkit-font-smoothing: subpixel-antialiased; border-radius: 5px; border: 1px solid #e0e0e0; }
+.rheader ul, .pubheader ul { list-style: none; height: 34px; padding: 0; background: #f4f4f4; -webkit-font-smoothing: subpixel-antialiased; border-radius: 0px; border: 1px solid #f4f4f4; }
 .rheader li, .pubheader li { float: left; padding: 0px 10px 0px 10px; border-right: 1px solid #e0e0e0; line-height: 34px; }
 .rheader ul a:hover, .Rheader ul a:focus, .pubheader ul a:hover, .Rheader ul a:focus { color: #675C5C; font-weight: bold; }
 .rheader i, .pubheader i { margin: #675C5C; font-weight: bold; }

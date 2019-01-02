@@ -13,7 +13,7 @@ category: publication
       {% endif %}
   <p class="pubentry">
     <a href="{{ post.url }}" title="{{ post.title }}">
-      {{ post.author }} ({{ post.year }}): "<i>{{ post.title }}: {{ post.subtitle }}</i>".
+      {{ post.author }} ({{ post.year }}): "<i>{{ post.title }}{% if post.subtitle %}: {{ post.subtitle }}{% endif %}</i>".
       <b>{{ post.journal }} {{ post.volume }} ({{ post.number }})</b>
       <span><i class="ai ai-doi ai-1x"></i>{{ post.doi }}</span>
     </a>

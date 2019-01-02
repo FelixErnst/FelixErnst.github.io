@@ -2,7 +2,6 @@
 category: [publication]
 layout: publication
 title: "Combining crystallogenesis methods to produce diffraction-quality crystals of a psychrophilic tRNA-maturation enzyme"
-subtitle: ""
 date: 2018-11-02
 author: de Wijn, Raphaël; Hennig, Oliver; <b>Ernst, Felix G.M.</b>; Lorber, Bernard; Betat, Heike; Mörl, Mario; Sauter, Claude
 journal: Acta Crystallographica Section F

@@ -31,11 +31,6 @@ layout: default
         <p class="view"><a href="{{ menupoint.link }}">{{ menupoint.text }} {% if menupoint.textsmall %}<small>{{ menupoint.textsmall }}</small>{% endif %}</a></p>
         {% endfor %}
       </header>
-      <section>
-
-      {{ content }}
-
-      </section>
       <footer>
 
       <p class="view">
@@ -46,6 +41,11 @@ layout: default
         {% endif %}
       </p>
       </footer>
+      <section>
+
+      {{ content }}
+
+      </section>
     </div>
     <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
     {% if site.google_analytics %}

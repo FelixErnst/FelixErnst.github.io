@@ -1,14 +1,12 @@
 /* changes to element defaults */
 a:hover, a:focus {
-  font-weight: normal;
+  /*font-weight: normal;*/
 }
 section {
-  width: 800px;
+  width: 600px;
 }
-
-/* changes to class defaults */
 .wrapper {
-  width: 1100px;
+  width: 900px;
 }
 
 /* new class */
@@ -31,20 +29,59 @@ section {
 .pubentry span, .rentry span {
   white-space: nowrap;
 }
+.pubentry b, .pubentry b:hover, .pubentry b:focus,
+.rentry b, .rentry b:hover, .rentry b:focus {
+  font-weight: bold;
+}
 .fgme{
   font-weight: bold;
 }
 
 /* new class for elements */
-.text-center { transform: translateY(3px); }
-.rheader, .pubheader { margin-bottom:10px; }
-.rheader ul, .pubheader ul { list-style: none; height: 34px; padding: 0; background: #f4f4f4; -webkit-font-smoothing: subpixel-antialiased; border-radius: 0px; border: 1px solid #f4f4f4; }
-.rheader li, .pubheader li { float: left; padding: 0px 10px 0px 10px; border-right: 1px solid #e0e0e0; line-height: 34px; }
-.rheader ul a:hover, .Rheader ul a:focus, .pubheader ul a:hover, .Rheader ul a:focus { color: #675C5C; font-weight: bold; }
-.rheader i, .pubheader i { margin: #675C5C; font-weight: bold; }
-.rheader ul a:active, .pubheader ul a:active { background-color: #f0f0f0; }
-.rheader li:first-child a, .pubheader li:first-child a { border-radius: 5px 0 0 5px; }
-.rheader li:last-child a, .pubheader li:last-child a { border-radius: 0 5px 5px 0; }
+.text-center {
+  transform: translateY(3px);
+}
+.rheader, .pubheader {
+  width: 100%;
+  margin-bottom:10px;
+  display: block;
+  float: left;
+}
+.rheader ul, .pubheader ul {
+  width: 100%;
+  display: inline-block;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: #f4f4f4;
+  -webkit-font-smoothing: subpixel-antialiased;
+  border-radius: 0px;
+  border: 1px solid #f4f4f4;
+}
+.rheader li, .pubheader li {
+  float: left;
+  padding: 0px 10px 0px 10px;
+  border-right: 1px solid #e0e0e0;
+  line-height: 34px;
+}
+.rheader ul a:hover, .rheader ul a:focus,
+.pubheader ul a:hover, .rheader ul a:focus {
+  color: #675C5C;
+  font-weight: bold;
+}
+.rheader i, .pubheader i {
+  margin: #675C5C;
+  font-weight: bold;
+}
+.rheader ul a:active, .pubheader ul a:active {
+  background-color: #f0f0f0;
+}
+.rheader li:first-child a, .pubheader li:first-child a {
+  border-radius: 5px 0 0 5px;
+}
+.rheader li:last-child a, .pubheader li:last-child a {
+  border-radius: 0 5px 5px 0;
+}
 
 .pub h2, .rposts h2 {
 	line-height: 0px;
